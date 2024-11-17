@@ -8,10 +8,8 @@ html {
 
 .wrapper {
   text-align: center;
-  width: 100%;
-  top: 50%;
-  margin-top: -55px;
-  position: absolute;
+  max-width: 100%;
+  margin-top: 50vh;
   min-width: 200px;
   letter-spacing: 2px;
 }
