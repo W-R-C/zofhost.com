@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zof</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+
+<nav class="navbar">
+    <div id="navbar-wrapper">
+        <div class="logo"><a href="./"><img src="./assets/photos/zof-logo-crop-white.png"></a></div>
+        <ul class="nav-links">
+        <!--<li><a href="./about-us">About Us</a></li>
+            <li><a href="./support">Support</a></li>
+            <li><a href="./pricing">Pricing</a></li>
+            <li><a class="login-link" href="./#">Login</a></li>-->
+        </ul>
+    </div>
+</nav>
+
+<!-- Background -->
+
+<div id="background"></div>
+
+<!-- Hero Section -->
+
+<header class="hero">
+    <div class="container">
+        <h1>ZOF</h1>
+        <p>Empowering Your Business with&nbsp;<span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        <a href="#fade-in" class="cta-button">Explore Features</a>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+            <defs>
+                <linearGradient id="bg">
+                    <stop offset="0%" style="stop-color: #161625"></stop>
+                    <stop offset="50%" style="stop-color: #25253d"></stop>
+                    <stop offset="100%" style="stop-color: #25253d"></stop>
+                </linearGradient>
+                <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" /></defs>
+            <g>
+                <use xlink:href='#wave' opacity=".3"><animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="10s"
+                    calcMode="spline"
+                    values="270 230; -334 180; 270 230"
+                    keyTimes="0; .5; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite" />
+                </use>
+                <use xlink:href='#wave' opacity=".6"><animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="8s"
+                    calcMode="spline"
+                    values="-270 230;243 220;-270 230"
+                    keyTimes="0; .6; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite" />
+                </use>
+                <use xlink:href='#wave' opacty=".9"><animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="6s"
+                    calcMode="spline"
+                    values="0 230;-140 200;0 230"
+                    keyTimes="0; .4; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite" />
+                </use>
+            </g>
+        </svg>
+    </div>
+    <div id="fade-in"></div>
+</header>
+
+<!-- Login panel -->
+
+<div id="login-wrapper" class="hidden">
+    <div id="login-background" class="login_signup">
+        <form action="/" method="POST" class="form login">
+
+            <div class="form__field">
+              <label for="login__username"><svg class="icon">
+                  <use xlink:href="#icon-user"></use>
+                </svg><span class="hidden">Email</span></label>
+              <input autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="Email" required>
+            </div>
+      
+            <div class="form__field">
+              <label for="login__password"><svg class="icon">
+                  <use xlink:href="#icon-lock"></use>
+                </svg><span class="hidden">Password</span></label>
+              <input id="login__password" type="password" name="password" class="form__input" placeholder="Password" required>
+            </div>
+      
+            <div class="form__field">
+              <input type="submit" value="Sign In">
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icons">
+                <symbol id="icon-arrow-right" viewBox="0 0 1792 1792">
+                    <path d="M1600 960q0 54-37 91l-651 651q-39 37-91 37-51 0-90-37l-75-75q-38-38-38-91t38-91l293-293H245q-52 0-84.5-37.5T128 1024V896q0-53 32.5-90.5T245 768h704L656 474q-38-36-38-90t38-90l75-75q38-38 90-38 53 0 91 38l651 651q37 35 37 90z" />
+                </symbol>
+                <symbol id="icon-lock" viewBox="0 0 1792 1792">
+                    <path d="M640 768h512V576q0-106-75-181t-181-75-181 75-75 181v192zm832 96v576q0 40-28 68t-68 28H416q-40 0-68-28t-28-68V864q0-40 28-68t68-28h32V576q0-184 132-316t316-132 316 132 132 316v192h32q40 0 68 28t28 68z" />
+                </symbol>
+                <symbol id="icon-user" viewBox="0 0 1792 1792">
+                    <path d="M1600 1405q0 120-73 189.5t-194 69.5H459q-121 0-194-69.5T192 1405q0-53 3.5-103.5t14-109T236 1084t43-97.5 62-81 85.5-53.5T538 832q9 0 42 21.5t74.5 48 108 48T896 971t133.5-21.5 108-48 74.5-48 42-21.5q61 0 111.5 20t85.5 53.5 62 81 43 97.5 26.5 108.5 14 109 3.5 103.5zm-320-893q0 159-112.5 271.5T896 896 624.5 783.5 512 512t112.5-271.5T896 128t271.5 112.5T1280 512z" />
+                </symbol>
+            </svg>
+          </form>
+
+          <p class="text--center">Not a member? <a class="sign-up-link" href="#">Sign up now</a> <svg class="icon">
+            <use xlink:href="#icon-arrow-right"></use>
+          </svg></p>
+
+    </div>
+
+<!-- sign up panel -->
+
+    <div id="signup-background" class="login_signup">
+        <form action="/" method="POST" class="form login">
+
+            <div class="form__field">
+                <label for="login__email"><svg class="icon">
+                    <use xlink:href="#icon-user"></use>
+                  </svg><span class="hidden">Email</span></label>
+                <input autocomplete="username" id="login__email" type="text" name="email" class="form__input" placeholder="Email" required>
+            </div>
+      
+            <div class="form__field">
+              <label for="login__password"><svg class="icon">
+                  <use xlink:href="#icon-lock"></use>
+                </svg><span class="hidden">Password</span></label>
+              <input id="login__password" type="password" name="password" class="form__input" placeholder="Password" required>
+            </div>
+
+            <div class="form__field">
+                <label for="login__confirm_password"><svg class="icon">
+                    <use xlink:href="#icon-lock"></use>
+                  </svg><span class="hidden">Confirm Password</span></label>
+                <input id="login__confirm_password" type="password" name="confirm password" class="form__input" placeholder="Confirm Password" required>
+            </div>
+
+            <div id="tos-agreement" class="form__field">
+                <input type="radio" name="tos" required><p>I have read and understood the <a id="radio-tos" href="https://zofhost.com/tos">terms of service</a>.</p>
+            </div>
+
+            <div id="privacy-agreement" class="form__field">
+                <input type="radio" name="privacy" required><p>I have read and understood the <a id="radio-privacy" href="https://zofhost.com/privacy-policy">privacy policy</a>.</p>
+            </div>
+      
+            <div class="form__field">
+              <input type="submit" value="Sign Up">
+            </div>
+
+        </form>
+
+        <!--<p class="text--center">Already a member? <a class="login-link" href="#">Login now</a> <svg class="icon"><use xlink:href="#icon-arrow-right"></use></svg></p>-->
+
+    </div>
+</div>
+
+<!-- Features Section -->
+
+<main>
+    <section id="features" class="features">
+        <h2 class="section-title">How we can help</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <i class="feature-icon fas fa-terminal"></i>
+                <h3>Consulting</h3>
+                <p>Consulting and support services</p>
+            </div>
+            <div class="feature">
+                <i class="feature-icon fas fa-bolt"></i>
+                <h3>Competitive Pricing</h3>
+                <p>Same level of service at a cheaper price</p>
+            </div>
+            <div class="feature">
+                <i class="feature-icon fa-brands fa-cloudscale"></i>
+                <h3>Scalable</h3>
+                <p>Easily scale your agreement needs up or down</p>
+            </div>
+            <div class="feature">
+                <i class="feature-icon fas fa-headset"></i>
+                <h3>Quick Support</h3>
+                <p>Always here for your queries</p>
+            </div>
+            <div class="feature">
+                <i class="feature-icon fas fa-globe"></i>
+                <h3>Web Pages</h3>
+                <p>Host static pages with ease</p>
+            </div>
+            <div class="feature">
+                <i class="feature-icon fas fa-fighter-jet"></i>
+                <h3>SLA</h3>
+                <p>Quick service level agreement times</p>
+            </div>
+            <div class="feature">
+                <i class="feature-icon fas fa-user"></i>
+                <h3>On-Site Support</h3>
+                <p>On-Site support and consultations</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact-Us Section -->
+
+    <section id="contact-us">
+        <div>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+            <defs>
+                <linearGradient id="bg">
+                    <stop offset="0%" style="stop-color: #161625"></stop>
+                    <stop offset="50%" style="stop-color: #25253d"></stop>
+                    <stop offset="100%" style="stop-color: #25253d"></stop>
+                </linearGradient>
+                <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" /></defs>
+                <g>
+                    <use xlink:href='#wave' opacity=".3"><animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="10s"
+                        calcMode="spline"
+                        values="270 230; -334 180; 270 230"
+                        keyTimes="0; .5; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                        repeatCount="indefinite" />
+                    </use>
+                    <use xlink:href='#wave' opacity=".6"><animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="8s"
+                        calcMode="spline"
+                        values="-270 230;243 220;-270 230"
+                        keyTimes="0; .6; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                        repeatCount="indefinite" />
+                    </use>
+                    <use xlink:href='#wave' opacty=".9"><animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="6s"
+                        calcMode="spline"
+                        values="0 230;-140 200;0 230"
+                        keyTimes="0; .4; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                        repeatCount="indefinite" />
+                    </use>
+                </g>
+            </svg>
+            <div id="fade-out"></div>
+            <div id="contact-us-form">
+                <h2 class="section-title">Start the Conversation - We're Just a Click Away</h2>
+                <form action="https://formspree.io/f/mandaqng" method="POST">
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" required />   
+                    <input name="email" type="email" class="feedback-input" placeholder="Email" required />
+                    <input name="company" type="text" class="feedback-input" placeholder="Company (Optional)" />
+                    <textarea name="text" class="feedback-input" placeholder="How can we help?" required></textarea>
+                    <input type="submit" value="SUBMIT"/>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+
+<footer>
+    <div id="top-footer">
+        <div class="footer-info">
+            <div>
+                <h6>About</h6>
+                <p>Welcome to Zof—where we provide expert IT consulting services tailored for small and medium-sized businesses. From reliable helpdesk support to secure cloud solutions and robust cybersecurity, we make technology work for you. Our team of professionals works closely with you to develop custom strategies that streamline operations, enhance security, and drive growth. With Zof, you’ll have the support you need to navigate the digital landscape with confidence.</p>
+            </div>
+        </div>
+    <!--<div id="footer-links">
+            <div id="quick-links" class="link-header">
+                <h6>Quick Links</h6>
+                <div class="links">
+                    <ul>
+                        <li><a class="login-link" href="./#">Login / Sign up</a></li>
+                        <li><a href="/tos" target="_self">Terms of Service</a></li>
+                        <li><a href="/privacy" target="_self">Privacy Policy</a></li>
+                        <li><a href="/cookies" target="_self">Cookie Settings</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us" target="_self">About Us</a></li>
+                        <li><a href="/pricing" target="_self">Pricing</a></li>
+                        <li><a href="/support" target="_self">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="social" class="link-header">
+                <h6>Social</h6>
+                <div class="links">
+                    <ul>
+                        <li><a href="https://www.youtube.com/@zofllc" target="_blank" rel="noreferrer">YouTube</a></li>
+                        <li><a href="https://www.x.com/zofhost/" target="_blank" rel="noreferrer">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/zofhost/" target="_blank" rel="noreferrer">Instagram</a></li>
+                        <li><a href="https://linkedin.com/company/zofhost" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    <hr>
+    <hr>
+    <div id="bottom-footer">
+        <div id="copyright-wrapper">
+            <p><a href="https://zofhost.com">Zof LLC</a></p>
+            <i class="fa-solid fa-circle"></i>
+            <p><a href="mailtto:admin@zofhost.com">admin@zofhost.com</a></p>
+        </div>
+        <div id="social-icons">
+            <ul>
+            <!--<li><a href="https://www.youtube.com/@zofllc" target="_blank" rel="noreferrer" class="fa-brands fa-youtube"><span class="label">YouTube</span></a></li>
+                <li><a href="https://www.x.com/zofhost/" target="_blank" rel="noreferrer" class="fa-brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.instagram.com/zofhost/" target="_blank" rel="noreferrer" class="fa-brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://linkedin.com/company/zofhost" target="_blank" rel="noreferrer" class="fa-brands fa-linkedin"><span class="label">LinkedIn</span></a></li>-->
+                <li><a href="mailto:support@zofhost.com?subject=Support" class="fa-solid fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="tel:+18649017551" class="fa-solid fa-square-phone"><span class="label">Email</span></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://kit.fontawesome.com/9db9a6acc1.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+</html>
