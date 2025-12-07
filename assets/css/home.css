@@ -124,6 +124,8 @@ header svg {
 .features {
   background-color: #161625;
   text-align: center;
+  margin-top: -4rem;
+  padding-top: 4rem;
 }
   
 .feature-grid {
