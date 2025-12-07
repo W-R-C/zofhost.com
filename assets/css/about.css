@@ -1,0 +1,176 @@
+/* General Styles */
+
+:root {
+  --card-height: 40em;
+  --card-width: calc(var(--card-height) / 1.5);
+  --card-picture: calc(var(--card-width) - 100px);
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background: #0d1117;
+    overflow-x: hidden;
+  }
+  
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2rem;
+  color: white;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: auto;
+  padding: 10vh 0 0 0;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+#background svg {
+	position: absolute;
+  transform: rotate(180deg);
+  z-index: 10;
+  width: 100%;
+	box-sizing: border-box;
+	display: block;
+}
+
+#fade-out {
+  position: fixed;
+  width: 100%; 
+  height: 25vh;
+  background-image: linear-gradient(to bottom, #161625, rgba(73, 73, 73, 0));
+  z-index: 15;
+}
+
+#what-do-we-do {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0 50px;
+}
+
+#what-do-we-do p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+#meet-the-team {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0 50px;
+}
+
+#card-container {
+  max-width: 1500px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.card {
+  margin: 50px 0;
+  width: var(--card-width);
+  padding: 50px;
+}
+
+.card img {
+  width: var(--card-picture);
+  border-radius: 50%;
+}
+
+.card h3 {
+  text-align: center;
+}
+
+.card h4 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.card p {
+  margin-top: 5px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 950px) {
+  .card img {
+    max-width:100%;
+    max-height:100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin: 0 auto;
+    padding: 3em 0;
+  }
+  .card img {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #meet-the-team {
+    padding: 0;
+    margin: 0;
+  }
+  .card img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  .card {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h2 {
+    font-size: 28px;
+    padding: 0;
+    margin-top: 5vh;
+  }
+  #what-do-we-do {
+    margin-top: 10vh;
+    padding: 0 15px;
+  }
+  #what-do-we-do p {
+    font-size: 14px;
+    margin: 14px auto 0 auto;
+  }
+  .card {
+    padding: 1em 0;
+  }
+  .card img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .card h3 {
+    font-size: 21px;
+  }
+  .card h4 {
+    font-size: 14px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
